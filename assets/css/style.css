@@ -33,7 +33,38 @@ body {
     padding: var(--btn-padding);
     border-radius: 15px;
     background-color: white;
+    animation: animatedgradient 30s linear alternate infinite;
+    background-image: linear-gradient(#ce282821, #222), var(--gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 2px;
+    border: 5px solid transparent;
+    min-height: 20vh;
+    background-size: 400% 400%;
+    --gradient: repeating-conic-gradient(red, gold 20deg)
 }
+
+.score::after {
+    content: attr(style);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    line-height: 1.5;
+  }
+
+@keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 150%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 #reset {
     font-size: 12px;
