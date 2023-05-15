@@ -37,7 +37,7 @@ body {
     background-image: linear-gradient(#ce282821, #222), var(--gradient);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    border-radius: 2px;
+    border-radius: 15px;
     border: 5px solid transparent;
     min-height: 20vh;
     background-size: 400% 400%;
