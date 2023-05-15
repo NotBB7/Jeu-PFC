@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/assets/img/background.jpg);
+    background-image: url(assets/img/background.jpg);
 }
 
 .score {
